@@ -1,6 +1,6 @@
 {
   "name": "compute-cross",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Computes the cross product between two numeric arrays.",
   "author": {
     "name": "Athan Reines",
