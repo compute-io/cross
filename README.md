@@ -31,7 +31,7 @@ var arr = cross( [1,2,3], [4,5,6] );
 // returns [ -3, 6, -3 ]
 ```
 
-Note: both `arrays` must have a length of `3`.
+Note: both `arrays` must be length `3`.
 
 
 ## Examples
