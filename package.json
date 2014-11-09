@@ -25,7 +25,15 @@
   "keywords": [
     "compute.io",
     "compute",
-    "computation"
+    "computation",
+    "mathematics",
+    "math",
+    "linear algebra",
+    "geometry",
+    "cross product",
+    "vector product",
+    "array",
+    "vector"
   ],
   "bugs": {
     "url": "https://github.com/compute-io/cross/issues"

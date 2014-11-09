@@ -1,8 +1,8 @@
-cross
+Cross Product
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Computes the cross product between two numeric arrays.
+> Computes the [cross product](http://en.wikipedia.org/wiki/Cross_product) between two numeric arrays.
 
 
 ## Installation
@@ -19,18 +19,37 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 To use the module,
 
 ``` javascript
-var foo = require( 'compute-cross' );
+var cross = require( 'compute-cross' );
 ```
 
-#### foo( arr )
+#### cross( x, y )
 
-What does this function do?
+Computes the [cross product](http://en.wikipedia.org/wiki/Cross_product) between two numeric `arrays`.
+
+``` javascript
+var arr = cross( [1,2,3], [4,5,6] );
+// returns [ -3, 6, -3 ]
+```
+
+Note: both `arrays` must have a length of `3`.
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'compute-cross' );
+var cross = require( 'compute-cross' );
+
+// Parallel vectors:
+console.log( cross( [1,-2,3], [2,-4,6] ) );
+// returns [ 0, 0, 0 ]
+
+// Anti-parallel vectors:
+console.log( cross( [-1,2,-3], [2,-4,6] ) );
+// returns [ 0, 0, 0 ]
+
+// Non-parallel vectors:
+console.log( cross( [4,-2,1], [1,-1,3] ) );
+// returns [ -5, -11, -2 ]
 ```
 
 To run the example code from the top-level application directory,
